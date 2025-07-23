@@ -3,6 +3,7 @@ from pymmcore_widgets import ImagePreview, StageWidget
 from qtpy.QtWidgets import QApplication, QGroupBox, QHBoxLayout, QWidget
 
 from pymmcore_remote import MMCorePlusProxy
+from Pyro5.nameserver import NameServer
 
 app = QApplication([])
 
@@ -11,9 +12,6 @@ with MMCorePlusProxy() as core:
     core.loadSystemConfiguration()
 
 # Pain Points
-# 1. Usually you want one MMCorePlus, shared across all of your devices. With Pyro5, you
-# want one MMCorePlusProxy per thread. With Qt, you might have the GUI thread, worker
-# threads, OR Pyro threads accessing your core object.
 
 class RemoteMixin:
     __mmc: MMCorePlusProxy
