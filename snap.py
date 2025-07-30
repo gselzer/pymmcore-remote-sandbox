@@ -1,5 +1,5 @@
-from pymmcore_remote import MMCorePlusProxy
+from pymmcore_remote import ClientCMMCorePlus
 
-with MMCorePlusProxy() as core:
+with ClientCMMCorePlus() as core:
     # Do your core stuff
     core.snapImage()

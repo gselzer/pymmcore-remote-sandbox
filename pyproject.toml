@@ -37,8 +37,8 @@ classifiers = [
     "Typing :: Typed",
 ]
 dependencies = [
-    "pymmcore-remote@git+https://github.com/pymmcore-plus/pymmcore-remote",
-    "pymmcore-widgets",
+    "pymmcore-remote@git+https://github.com/gselzer/pymmcore-remote@proxy-wrapper",
+    "pymmcore-widgets@git+https://github.com/tlambert03/pymmcore-widgets@fix-isinstance",
     "PyQt6",
 ]
 
