@@ -1553,7 +1553,7 @@ requires-dist = [
     { name = "pdbpp", marker = "extra == 'dev'" },
     { name = "pre-commit", marker = "extra == 'dev'" },
     { name = "pymmcore-remote", git = "https://github.com/gselzer/pymmcore-remote?rev=proxy-wrapper" },
-    { name = "pymmcore-widgets", git = "https://github.com/tlambert03/pymmcore-widgets?rev=fix-isinstance" },
+    { name = "pymmcore-widgets", git = "https://github.com/pymmcore-plus/pymmcore-widgets" },
     { name = "pyqt6" },
     { name = "pytest", marker = "extra == 'test'" },
     { name = "pytest-cov", marker = "extra == 'test'" },
@@ -1563,8 +1563,8 @@ requires-dist = [
 
 [[package]]
 name = "pymmcore-widgets"
-version = "0.1.dev331+g4b8ef92"
-source = { git = "https://github.com/tlambert03/pymmcore-widgets?rev=fix-isinstance#4b8ef92ec2a1ca5764769fd131a28c23db42d23e" }
+version = "0.10.1"
+source = { git = "https://github.com/pymmcore-plus/pymmcore-widgets#deab963f97ec19aeb49e3240f54976a7718608a1" }
 dependencies = [
     { name = "pymmcore-plus", extra = ["cli"] },
     { name = "pyopengl", marker = "sys_platform == 'darwin'" },
